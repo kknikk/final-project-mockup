@@ -1,0 +1,65 @@
+<template name="Profile_Page">
+  <div class="ui container">
+    <form class="ui form">
+      <h4 class="ui dividing header">MY PROFILE</h4>
+
+      <div class="field">
+        <label>Name</label>
+        <div class="two fields">
+          <div class="field">
+            <input type="text" name="first" placeholder="FIRST NAME">
+          </div>
+          <div class="field">
+            <input type="text" name="last" placeholder="LAST NAME">
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>ADDRESS</label>
+        <div class="fields">
+          <div class="twelve wide field">
+            <input type="text" name="shipping[address]" placeholder="Street Address">
+          </div>
+          <div class="four wide field">
+            <input type="text" name="shipping[address-2]" placeholder="Apt #">
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>CONTACT INFORMATION</label>
+        <div class="two fields">
+          <div class="field">
+            <input type="text" name="phone" placeholder="PHONE NUMBER">
+          </div>
+          <div class="field">
+            <input type="text" name="last" placeholder="EMAIL">
+          </div>
+        </div>
+      </div>
+
+      <div class="ui form">
+        <div class="field">
+          <label>FAVORITE FOODS</label>
+          <div class="ui selection dropdown">
+            <input type="hidden" name="gender">
+            <i class="dropdown icon"></i>
+            <div class="default text">PIZZA</div>
+            <div class="menu">
+              <div class="item" data-value="1">Male</div>
+              <div class="item" data-value="0">Female</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+  <script>
+    $('select.dropdown')
+        .dropdown()
+    ;
+  </script>
+</template>

@@ -15,10 +15,17 @@ FlowRouter.route('/home-page', {
   },
 });
 
-FlowRouter.route('/sign-up-page', {
-  name: 'Sign_Up_Page',
+FlowRouter.route('/about-page', {
+  name: 'About_Page',
   action() {
-    BlazeLayout.render('App_Body', { main: 'Sign_Up_Page' });
+    BlazeLayout.render('App_Body', { main: 'About_Page' });
+  },
+});
+
+FlowRouter.route('/profile-page', {
+  name: 'Profile_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Profile_Page' });
   },
 });
 
