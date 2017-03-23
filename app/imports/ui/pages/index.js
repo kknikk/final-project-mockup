@@ -12,3 +12,6 @@ import './list-stuff-page.js';
 import './landing-page.html';
 import './landing-page.js';
 
+import './sign-up-page.html';
+import './sign-up-page.js';
+

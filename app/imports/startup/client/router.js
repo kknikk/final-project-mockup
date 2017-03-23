@@ -11,7 +11,14 @@ FlowRouter.route('/', {
 FlowRouter.route('/home-page', {
   name: 'Home_Page',
   action() {
-    BlazeLayout.render('App_Body', { main: 'Homw_Page' });
+    BlazeLayout.render('App_Body', { main: 'Home_Page' });
+  },
+});
+
+FlowRouter.route('/sign-up-page', {
+  name: 'Sign_Up_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Sign_Up_Page' });
   },
 });
 
